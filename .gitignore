@@ -1,24 +1,31 @@
-# Mechanical (SolidWorks/AutoCAD)
+# --- ROS 2 Workspace ---
+software/ros2_ws/build/
+software/ros2_ws/install/
+software/ros2_ws/log/
+
+# --- Python & C++ ---
+__pycache__/
+*.pyc
+*.o
+*.so
+*.out
+
+# --- PlatformIO (ESP32) ---
+firmware/esp32_mcu/.pio/
+firmware/esp32_mcu/.vscode/
+
+# --- CAD Design Software ---
 ~$*.sldprt
 ~$*.sldasm
 ~$*.slddrw
 *.bak
 
-# Embedded (PlatformIO / ESP32)
-.pio/
-.vscode/
-*.bin
-*.elf
+# --- AI Model & Dataset ---
+*.pt
+*.onnx
+dataset/
+images/
 
-# Software (ROS 2 / Python / C++)
-build/
-install/
-log/
-__pycache__/
-*.pyc
-*.o
-*.so
-
-# Operating System
+# --- Operating System ---
 .DS_Store
 Thumbs.db
