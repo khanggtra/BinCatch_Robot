@@ -131,7 +131,7 @@ pio run -t upload
 
 ## 👥 Team Members
 
-- Ho Chi Minh City University of Technology (HCMUT) - Mechatronics Engineering (Class CK23CDN)
+- Ho Chi Minh City University of Technology (HCMUT) - Mechatronics Engineering
 - Lê Văng Sơn Hà
 - Lê Thanh Hải
 - Trần Gia Khang
