@@ -1,7 +1,21 @@
+# --- VS Code & IDEs ---
+.vscode/browse.vc.db*
+.vscode/ipch/
+*.code-workspace
+
 # --- ROS 2 Workspace ---
 software/ros2_ws/build/
 software/ros2_ws/install/
 software/ros2_ws/log/
+
+# --- Microcontroller Firmware (STM32) ---
+firmware/stm32_mcu/Debug/
+firmware/stm32_mcu/Release/
+firmware/stm32_mcu/build/
+*.hex
+*.bin
+*.elf
+*.map
 
 # --- Python & C++ ---
 __pycache__/
@@ -10,21 +24,20 @@ __pycache__/
 *.so
 *.out
 
-# --- PlatformIO (ESP32) ---
-firmware/esp32_mcu/.pio/
-firmware/esp32_mcu/.vscode/
-
-# --- CAD Design Software ---
+# --- CAD Design Software (SolidWorks) ---
 ~$*.sldprt
 ~$*.sldasm
 ~$*.slddrw
 *.bak
 
-# --- AI Model & Dataset ---
+# --- AI Model & Dataset (YOLO & Vision) ---
 *.pt
 *.onnx
 dataset/
 images/
+runs/
+*.mp4
+*.avi
 
 # --- Operating System ---
 .DS_Store

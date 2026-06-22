@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/jazzy/include/**",
+        "/home/khang/2026/BinCatch_Robot/software/ros2_ws/src/bincatch_bringup/include/**",
+        "/home/khang/2026/BinCatch_Robot/software/ros2_ws/src/bincatch_core/include/**",
+        "/home/khang/2026/BinCatch_Robot/software/ros2_ws/src/bincatch_interfaces/include/**",
+        "/home/khang/2026/BinCatch_Robot/software/ros2_ws/src/bincatch_vision/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ros2",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}
