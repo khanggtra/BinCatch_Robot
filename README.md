@@ -80,21 +80,25 @@ cd BinCatch_project
 **Step 1:** Install ROS 2 Jazzy on Ubuntu 24.04.
 
 **Step 2:** Navigate to the workspace:
+
 ```bash
 cd software/ros2_ws/
 ```
 
 **Step 3:** Install dependencies:
+
 ```bash
 rosdep install --from-paths src -y --ignore-src
 ```
 
 **Step 4:** Build the workspace:
+
 ```bash
 colcon build --symlink-install
 ```
 
 **Step 5:** Source the environment:
+
 ```bash
 source install/setup.bash
 ```
@@ -104,16 +108,19 @@ source install/setup.bash
 > Update these launch commands once the system packages are finalized.
 
 **1. Start the micro-ROS agent (via UART/DMA):**
+
 ```bash
 ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0
 ```
 
 **2. Launch the vision pipeline:**
+
 ```bash
 ros2 launch bincatch_bringup vision.launch.py
 ```
 
 **3. Launch the trajectory estimator and navigation core:**
+
 ```bash
 ros2 run bincatch_core estimator_node
 ```
