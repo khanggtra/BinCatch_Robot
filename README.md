@@ -17,6 +17,7 @@ The core concept and mechanics of this project take direct inspiration from the 
 * **Nonlinear Trajectory Estimation:** Real-time prediction of aerodynamic drag and ballistic drop using Levenberg-Marquardt optimization.
 * **Omnidirectional Mobility:** Four-wheel Mecanum drive controlled by a custom **STM32 MCU** board, leveraging hardware timer encoder interfaces for high-frequency PID loops.
 * **Robust Chassis:** Custom 6061 aluminum sheet metal chassis for rigidity and stability during sudden acceleration.
+* **Markerless Ceiling SLAM & Sensor Fusion:** Upward-facing visual odometry tracking natural ceiling features, seamlessly fused with MPU6050 IMU data and wheel kinematics via an Extended Kalman Filter (EKF) to completely counteract Mecanum wheel slippage and ensure drift-free indoor localization.
 
 ## 🏗️ System Architecture
 
@@ -132,12 +133,6 @@ ros2 run bincatch_core estimator_node
 * Software contributors should work only in `software/ros2_ws/src/`.
 * Use descriptive Conventional Commit messages: `feat(vision): ...`, `fix(stm32): ...`, `chore: ...`.
 * Do not push directly to `main`; create a feature branch and open a PR.
-
-## 👥 Team Members
-
-* **Lê Văng Sơn Hà:** [TODO: Update Role - e.g., Mechanical Design & PCB Design]
-* **Lê Thanh Hải:** [TODO: Update Role - e.g., Computer Vision & AI Training]
-* **Trần Gia Khang :** High-Level Control Architecture (ROS 2), Trajectory Estimation Math
 
 ## 📄 License
 
